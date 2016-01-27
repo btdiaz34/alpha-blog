@@ -14,11 +14,10 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        
-        <li><%= link_to "Articles", articles_path%></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
+      <ul class="nav navbar-nav specs">
+        <li id="specs"><%= link_to "Articles", articles_path%></li>
+        <li id="specs"><a href="#">Link</a></li>
+        <li class="dropdown" id="specs">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
           <ul class="dropdown-menu">
             
@@ -39,8 +38,8 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
+        <li id="specs"><a href="#">Link</a></li>
+        <li id="specs" class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
