@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'pages#home'
   get "pages/home", to: 'pages#home'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
   
   get "about", to: 'pages#about'
   get "signup", to: 'users#new'
